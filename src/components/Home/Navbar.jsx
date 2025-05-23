@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Welcome from "./welcome";
+import search from "../../assets/search.png";
 
 const Navbar = () => {
   const navitem = (
@@ -58,8 +59,8 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <div className="me-6">
-            <h1 className="">Manage Rentals</h1>
+          <div className="me-6 text-black">
+            <img className="" src={search} alt="" />
           </div>
           <Link to="/login">
             <button className="btn btn-accent text-white">Login</button>
