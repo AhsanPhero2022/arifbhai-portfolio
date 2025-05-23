@@ -15,7 +15,7 @@ const Banner = () => {
       <div className="relative z-20">
         <div className="flex justify-center items-center text-center flex-col">
           <h2 className="text-5xl font-bold text-white">
-            Your Portal to India is <br /> Exquisite Real Estate
+            Grow your business with <br /> E-commerce Dropshipping.
           </h2>
 
           <p className="text-[#F9FAFB] mt-8  mb-12">
@@ -23,7 +23,7 @@ const Banner = () => {
             properties.
           </p>
           <div>
-            <button className="bg-[#005EAE] border border-[#005EAE] hover:bg-[#005EAE] hover:border-[#005EAE] text-white px-4 py-2 flex justify-center items-center rounded-[8px]">
+            <button className="bg-[#00838d] border border-[#00838d] hover:bg-[#005EAE] hover:border-[#00838d] text-white px-4 py-2 flex justify-center items-center rounded-[8px]">
               <span>
                 <img src={search} alt="" />
               </span>

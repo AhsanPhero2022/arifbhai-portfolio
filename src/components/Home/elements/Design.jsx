@@ -14,7 +14,9 @@ const Design = () => {
           <h2 className="card-title">Shopify Theme Customize</h2>
           <p>Make your old shopify theme to upgrade the new version</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary">Buy Now</button>
+            <button className="btn text-white bg-[#00838d] hover:bg-[#005EAE]">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
@@ -31,7 +33,9 @@ const Design = () => {
             Create your own shopify store and start your dropshipping business.
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary">Buy Now</button>
+            <button className="btn text-white bg-[#00838d] hover:bg-[#005EAE]">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
@@ -46,7 +50,9 @@ const Design = () => {
           <h2 className="card-title">Shopify Store Create & Design</h2>
           <p>Make your old shopify theme to upgrade the new version</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary">Buy Now</button>
+            <button className="btn text-white bg-[#00838d] hover:bg-[#005EAE]">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
