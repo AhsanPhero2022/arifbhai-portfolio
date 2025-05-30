@@ -8,7 +8,7 @@ const Navbar = () => {
       <Link to="/">
         <li className="hover:text-orange-500">Home</li>
       </Link>
-      <Link to="/buyAService">
+      <Link to="/allServices">
         <li className="hover:text-orange-500">All Services</li>
       </Link>
       <Link to="/propertyDetails">
@@ -18,7 +18,7 @@ const Navbar = () => {
       <Link to="/faq">
         <li className="hover:text-orange-500">FAQ</li>
       </Link>
-      <Link to="/aboutPage">
+      <Link to="/aboutUs">
         <li className="hover:text-orange-500">About us</li>
       </Link>
       <Link>
@@ -67,8 +67,8 @@ const Navbar = () => {
           <div className="me-6 text-black">
             <img className="" src={search} alt="" />
           </div>
-          <Link to="/login">
-            <button className="btn btn-accent text-white">Login</button>
+          <Link to="/contactUs">
+            <button className="btn btn-accent text-white">Contact Us</button>
           </Link>
         </div>
       </div>
