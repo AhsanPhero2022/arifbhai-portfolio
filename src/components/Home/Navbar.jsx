@@ -6,19 +6,24 @@ const Navbar = () => {
   const navitem = (
     <>
       <Link to="/">
-        <li>Home</li>
+        <li className="hover:text-orange-500">Home</li>
       </Link>
       <Link to="/buyAService">
-        <li>Buy</li>
+        <li className="hover:text-orange-500">All Services</li>
       </Link>
       <Link to="/propertyDetails">
-        <li>Sell</li>
+        <li className="hover:text-orange-500">Services</li>
       </Link>
 
-      <Link to="/aboutPage">
-        <li>About us</li>
+      <Link to="/faq">
+        <li className="hover:text-orange-500">FAQ</li>
       </Link>
-      <li>Services</li>
+      <Link to="/aboutPage">
+        <li className="hover:text-orange-500">About us</li>
+      </Link>
+      <Link>
+        <li className="hover:text-orange-500">GET A QUOTE</li>
+      </Link>
     </>
   );
 
@@ -46,13 +51,13 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="font-bold menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {navitem}
             </ul>
           </div>
           <div>
-            <ul className="menu menu-horizontal hidden px-1 lg:flex gap-6">
+            <ul className="font-bold  menu menu-horizontal hidden px-1 lg:flex gap-6">
               {navitem}
             </ul>
           </div>
