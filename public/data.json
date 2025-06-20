@@ -1,0 +1,48 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "title": "SHOPIFY THEME CUSTOMIZE",
+      "image": "https://thegenielab.com/cdn/shop/articles/Shopify_free_themes_1024x1024.jpg?v=1675078336",
+      "description": "Make your old shopify theme to upgrade the new version."
+    },
+    {
+      "id": "2",
+      "title": "SHOPIFY DROPSHIPPING STORE CREATE AND DESIGN",
+      "image": "https://the4.co/cdn/shop/articles/image6_c3e8227e-a280-4532-9146-ea4c73227b74.png?v=1692675723",
+      "description": "Create your own shopify store and start your dropshipping business."
+    },
+    {
+      "id": "3",
+      "title": "SHOPIFY STOR BUILD AND DESIGN",
+      "image": "https://ecomposer.io/cdn/shop/articles/29d9008f-e1a7-4784-88ae-ffd7e5075a90-cover.png?v=1712039322",
+      "description": "Make your old shopify theme to upgrade the new version."
+    }
+  ],
+  "products": [
+    {
+      "id": "products1",
+      "title": "ACCORDION FOOTER FOR SHOPIFY FREE THEME",
+      "description": "Order Now",
+      "image": "/images/products/headphones.jpg"
+    },
+    {
+      "id": "products2",
+      "title": "ADD A MEGA MENU AND DROPDOWN MENU SIMULTANEOUSLY",
+      "description": "Order Now",
+      "image": "/images/products/smartphone.jpg"
+    },
+    {
+      "id": "products3",
+      "title": "ADD BREADCRUMBS FOR SHOPIFY FREE THEME",
+      "description": "Order Now",
+      "image": "/images/products/laptop.jpg"
+    },
+    {
+      "id": "products4",
+      "title": "AUTOPLAY VIDEO ON SHOPIFY HOMEPAGE",
+      "description": "Order Now",
+      "image": "/images/products/smartwatch.jpg"
+    }
+  ]
+}

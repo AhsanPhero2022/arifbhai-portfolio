@@ -1,4 +1,3 @@
-import React from "react";
 import Design from "../Home/elements/Design";
 import CustomCod from "../Home/elements/CustomCod";
 
