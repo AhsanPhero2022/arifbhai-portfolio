@@ -23,26 +23,50 @@
     {
       "id": "products1",
       "title": "ACCORDION FOOTER FOR SHOPIFY FREE THEME",
-      "description": "Order Now",
-      "image": "/images/products/headphones.jpg"
+      "description": "Make your Shopify store’s footer clean, organized, and user-friendly with an accordion-style footer menu. This service transforms bulky footer sections into collapsible panels that expand and collapse smoothly, providing a neat way to display links, policies, contact info, and more.",
+      "image": "https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1718365828/catalog/1801582308313344778/ttyzjdcdmeyd84rkq5vh.jpg"
     },
     {
       "id": "products2",
-      "title": "ADD A MEGA MENU AND DROPDOWN MENU SIMULTANEOUSLY",
-      "description": "Order Now",
-      "image": "/images/products/smartphone.jpg"
+      "title": "ADD A MEGA MENU AND DROPDOWN MENU",
+      "description": "To add both a Mega Menu and a Dropdown Menu at the same time, you need to structure your navigation so that each top-level menu item behaves according to its purpose.",
+      "image": "https://crocoblock.com/wp-content/uploads/2022/08/simple-menu-vs-mega-menu.png"
     },
     {
       "id": "products3",
       "title": "ADD BREADCRUMBS FOR SHOPIFY FREE THEME",
-      "description": "Order Now",
-      "image": "/images/products/laptop.jpg"
+      "description": "Enhance your Shopify stores navigation and user experience with professionally integrated breadcrumbs.",
+      "image": "https://ecomposer.io/cdn/shop/articles/image8_e499ab79-50d3-49c0-8b4f-052ff2767b30_1100x.png?v=1747623840"
     },
     {
       "id": "products4",
-      "title": "AUTOPLAY VIDEO ON SHOPIFY HOMEPAGE",
-      "description": "Order Now",
-      "image": "/images/products/smartwatch.jpg"
+      "title": "AUTO PLAY VIDEO ON SHOPIFY HOMEPAGE",
+      "description": "Capture your visitors attention instantly with a seamlessly embedded auto-play video on your Shopify homepage.",
+      "image": "https://i.ytimg.com/vi/rLeAx-u2nzU/maxresdefault.jpg"
+    },
+    {
+      "id": "products5",
+      "title": "COLLECTION TABS IN SHOPIFY FREE THEME",
+      "description": "Organize and showcase multiple product collections in a sleek, tabbed layout—right on your homepage or landing section. This service adds interactive collection tabs that allow customers to switch between product groups (e.g., New Arrivals, Best Sellers, Sale) without reloading the page.",
+      "image": "https://cdn.shopify.com/app-store/listing_images/7325a9eeed63a29b914d5ca4d095bf3a/desktop_screenshot/CMGh4dr4rIsDEAE=.png?height=720&width=1280"
+    },
+    {
+      "id": "products6",
+      "title": "DISABLE RIGHT CLICK TO PROTECT DATA",
+      "description": "Protect your Shopify store’s content, images, and design by disabling right-click functionality. This service prevents visitors from easily copying text, saving images, or viewing your site's source code through the context menu.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFB32a0fos9HLm7GkV2pOGIlP7Y9xoIY0TKg&s"
+    },
+    {
+      "id": "products7",
+      "title": "FAKE SALE POP-UPS ON YOUR SHOPIFY STORE",
+      "description": "Build trust and boost conversions on your Shopify store with real-time sales notification popups—just like the Snap Noti system. These dynamic popups display recent purchases, sign-ups, or activity happening in your store, giving your site a sense of activity and urgency.",
+      "image": "https://wizzcommerce.io/wp-content/uploads/2025/01/snap-noti-features.webp"
+    },
+    {
+      "id": "products8",
+      "title": "IMAGE BANNER CLICKABLE WITH RESPONSIVE",
+      "description": "Turn your Shopify homepage or section banners into fully clickable, high-converting links. With this service, your image banners will not only catch attention visually but also guide visitors directly to specific collections, products, or pages — boosting engagement and sales.",
+      "image": "https://i.ytimg.com/vi/H1LBypEH8-M/maxresdefault.jpg"
     }
   ]
 }

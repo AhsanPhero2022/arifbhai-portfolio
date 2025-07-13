@@ -21,11 +21,14 @@ const BuyNow = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  ">
       <div className="flex justify-center my-5 lg:sticky lg:top-10 self-start">
-        <img
-          src={service.image}
-          alt=""
-          className="w-full  h-auto object-contain"
-        />
+        <div>
+          <img
+            src={service.image}
+            alt=""
+            className="w-full h-auto object-contain"
+          />
+          <p className="my-5 px-4 font-semibold">{service.description}</p>
+        </div>
       </div>
 
       <div>
