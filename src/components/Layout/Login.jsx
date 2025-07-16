@@ -1,10 +1,17 @@
-import React from "react";
+import { SignIn } from "@clerk/clerk-react";
+import { dark } from "@clerk/themes";
 
 const Login = () => {
   return (
-    <div>
-      <h1>this is login page working on this page</h1>
-    </div>
+    <main className=" h-screen w-full">
+      <div className="flex justify-center  items-center h-screen w-full">
+        <SignIn
+          appearance={{
+            baseTheme: dark,
+          }}
+        />
+      </div>
+    </main>
   );
 };
 

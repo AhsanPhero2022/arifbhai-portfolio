@@ -110,7 +110,14 @@ const Footer = () => {
                       Twitter
                     </li>
                     <li className="hover:underline cursor-pointer text-base">
-                      LinkedIn
+                      <a
+                        href="https://www.linkedin.com/in/dream-tech-zone-78824a257/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full h-full"
+                      >
+                        Linkedin
+                      </a>
                     </li>
                     <li className="hover:underline cursor-pointer text-base">
                       Facebook
@@ -168,7 +175,14 @@ const Footer = () => {
               <FaTwitter className="text-[#0059B1] text-2xl" />
             </span>
             <span className="cursor-pointer">
-              <FaLinkedin className="text-[#0059B1] text-2xl" />
+              <a
+                href="https://www.linkedin.com/in/dream-tech-zone-78824a257/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-full"
+              >
+                <FaLinkedin className="text-[#0059B1] text-2xl" />
+              </a>
             </span>
             <span className="cursor-pointer">
               <FaFacebook className="text-[#0059B1] text-2xl" />

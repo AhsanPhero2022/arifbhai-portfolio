@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import Welcome from "./welcome";
-
+import { FaUserCircle } from "react-icons/fa";
+import { useUser } from "@clerk/clerk-react";
 const Navbar = () => {
+  const { user } = useUser();
+
   const navitem = (
     <>
       <Link to="/">
@@ -18,9 +21,6 @@ const Navbar = () => {
       </Link>
       <Link to="/aboutUs">
         <li className="hover:text-orange-500">About us</li>
-      </Link>
-      <Link to="/register">
-        <li className="hover:text-orange-500">Register</li>
       </Link>
     </>
   );
@@ -62,8 +62,24 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
+          {user ? (
+            <div data-tip="Edit Profile" className="tooltip w-10 h-10 mx-5">
+              <Link to="/profile">
+                <img src={user.imageUrl} className="rounded-full" />
+              </Link>
+            </div>
+          ) : (
+            <div data-tip="Sign Up" className="mx-5 tooltip">
+              <Link to="/register">
+                <FaUserCircle className="w-8 h-8 text-[#00838d]" />
+              </Link>
+            </div>
+          )}
+
           <Link to="/contactUs">
-            <button className="btn btn-accent text-white">Contact Us</button>
+            <button className="btn bg-[#00838d] border border-orange-400 hover:bg-orange-400 text-white">
+              Contact Us
+            </button>
           </Link>
         </div>
       </div>
