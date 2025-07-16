@@ -1,4 +1,5 @@
-import { FaLaptopCode } from "react-icons/fa";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+
 import { Link } from "react-router";
 import data from "../../../../public/data.json";
 
@@ -17,7 +18,9 @@ const CustomCod = () => {
                 <p>{product.title}</p>
 
                 <div class="go-corner">
-                  <div class="go-arrow">→</div>
+                  <div class=" text-white">
+                    <MdOutlineKeyboardDoubleArrowRight />
+                  </div>
                 </div>
               </Link>
             </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/dreamtech.avif";
+import logo from "../../assets/dreamtech.png";
 
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { PiHandPeace } from "react-icons/pi";
@@ -13,7 +13,7 @@ const Footer = () => {
             {/* //*Company Details */}
             <div className=" lg:col-start-1 lg:col-end-4 mb-10 lg:mb-0">
               <Link to="/" className="cursor-pointer ">
-                <img src={logo} className="w-[53px] h-20" alt="" />
+                <img src={logo} className="w-full h-52 rounded " alt="" />
               </Link>
               <p className="ml-3 text-base text-[#475467] mt-4">
                 Design amazing digital experiences that create more happy in the

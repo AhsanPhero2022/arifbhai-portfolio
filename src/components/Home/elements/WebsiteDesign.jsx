@@ -27,7 +27,7 @@ const WebsiteDesign = () => {
               alt=""
             />
           </div>
-          <div className="bg-gray-700 w-1/2  py-8 px-6 min-h-80 rounded-r">
+          <div className="bg-gradient-to-r from-[#00838d] to-orange-400 w-1/2  py-8 px-6 min-h-80 rounded-r">
             <h1 className="text-3xl font-bold text-white">
               WEBSITE DESIGN & DEVELOPMENT
             </h1>
@@ -44,7 +44,7 @@ const WebsiteDesign = () => {
           </div>
         </div>
         <div className="lg:flex ">
-          <div className="bg-gray-700 w-1/2  py-8 px-6 min-h-80 rounded-l">
+          <div className="bg-gradient-to-r from-[#00838d] to-orange-400 w-1/2  py-8 px-6 min-h-80 rounded-l">
             <h1 className="text-3xl font-bold text-white">
               WEBSITE DESIGN & DEVELOPMENT
             </h1>

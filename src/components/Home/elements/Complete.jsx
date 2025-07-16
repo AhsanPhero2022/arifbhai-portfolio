@@ -48,7 +48,7 @@ const services = [
 
 const Complete = () => {
   return (
-    <div className="bg-yellow-700 py-8 px-6 text-white">
+    <div className="bg-gradient-to-r from-orange-400 to-cyan-400 py-8 px-6 text-white">
       <h2 className="text-3xl font-bold text-center mb-2">
         YOUR COMPLETE SOLUTION FOR SHOPIFY GROWTH & SUCCESS
       </h2>

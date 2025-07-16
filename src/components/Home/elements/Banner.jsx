@@ -1,5 +1,6 @@
 import search from "../../../assets/search.png";
 import backgroundVideo from "../../../assets/banner_video.mp4";
+import { Link } from "react-router";
 
 const Banner = () => {
   return (
@@ -23,12 +24,14 @@ const Banner = () => {
             properties.
           </p>
           <div>
-            <button className="bg-[#00838d] border border-[#00838d] hover:bg-[#005EAE] hover:border-[#00838d] text-white px-4 py-2 flex justify-center items-center rounded-[8px]">
-              <span>
-                <img src={search} alt="" />
-              </span>
-              <span className="ml-1 md:text-lg">Buy our services</span>
-            </button>
+            <Link to="/allServices">
+              <button className="border border-blue-400 hover:bg-orange-500 text-white px-4 py-2 flex justify-center items-center rounded-[8px]">
+                <span>
+                  <img src={search} alt="" />
+                </span>
+                <span className="ml-1 md:text-lg">Buy our services</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

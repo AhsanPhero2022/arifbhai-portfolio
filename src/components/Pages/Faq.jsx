@@ -4,10 +4,18 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { AcademicCapIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import ContactUs from "./ContactUs";
 
 const Faq = () => {
   return (
     <div>
+      <div className="max-w-4xl mx-auto text-center mt-16 mb-8">
+        <h2 className="text-3xl font-bold">Got Questions? We've Got Answers</h2>
+        <p className="text-xl font-semibold mt-2">
+          Find answers to the most commonly asked questions. If you still need
+          help. <br /> feel free to reach out directly.
+        </p>
+      </div>
       <div className="w-1/2 my-4 mx-auto">
         <div className="mx-auto  divide-y text-white rounded-xl ">
           <Disclosure
@@ -244,6 +252,10 @@ const Faq = () => {
           </Disclosure>
         </div>
       </div>
+      <h1 className="text-3xl text-orange-500 font-semibold text-center my-12">
+        STILL HAVE QUESTIONS? GET IN TOUCH NOW
+      </h1>
+      <ContactUs />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Welcome from "./welcome";
-import search from "../../assets/search.png";
 
 const Navbar = () => {
   const navitem = (
@@ -11,18 +10,17 @@ const Navbar = () => {
       <Link to="/allServices">
         <li className="hover:text-orange-500">All Services</li>
       </Link>
-      <Link to="/propertyDetails">
-        <li className="hover:text-orange-500">Services</li>
+      <Link to="/serviceCategory">
+        <li className="hover:text-orange-500">My Services</li>
       </Link>
-
       <Link to="/faq">
         <li className="hover:text-orange-500">FAQ</li>
       </Link>
       <Link to="/aboutUs">
         <li className="hover:text-orange-500">About us</li>
       </Link>
-      <Link>
-        <li className="hover:text-orange-500">GET A QUOTE</li>
+      <Link to="/register">
+        <li className="hover:text-orange-500">Register</li>
       </Link>
     </>
   );
@@ -64,9 +62,6 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <div className="me-6 text-black">
-            <img className="" src={search} alt="" />
-          </div>
           <Link to="/contactUs">
             <button className="btn btn-accent text-white">Contact Us</button>
           </Link>
