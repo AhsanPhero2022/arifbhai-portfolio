@@ -21,23 +21,22 @@ const BuyNow = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  ">
       <div className="flex justify-center my-5 lg:sticky lg:top-10 self-start">
-        <div>
+        <div className="lg:ms-4 xl:ms-4 ">
           <img
             src={service.image}
             alt=""
-            className="w-full h-auto object-contain"
+            className="px-6 w-full h-auto object-contain"
           />
-          <p className="my-5 px-4 font-semibold">{service.description}</p>
         </div>
       </div>
 
       <div>
-        <h1 className="my-5 text-4xl font-semibold text-orange-500">
+        <h1 className="my-5 text-4xl ps-2 font-semibold text-[#00838d]">
           {service.title}
         </h1>
         <div className="flex gap-1  p-2 rounded">
           {[...Array(5)].map((_, index) => (
-            <StarIcon key={index} className="w-5 h-5 text-orange-500" />
+            <StarIcon key={index} className="w-5 h-5 text-[#00838d]" />
           ))}
         </div>
         {/* ths closer start from here */}
@@ -46,7 +45,7 @@ const BuyNow = () => {
             <Disclosure as="div" className="p-4 border-y" defaultOpen={false}>
               <DisclosureButton className="group flex w-full items-center justify-between">
                 <div className="flex gap-2">
-                  <AcademicCapIcon className="h-6 w-6 text-orange-500" />
+                  <AcademicCapIcon className="h-6 w-6 text-[#00838d]" />
                   <span className="font-medium">
                     What is your refund policy?
                   </span>

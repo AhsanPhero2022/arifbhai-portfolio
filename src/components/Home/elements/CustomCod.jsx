@@ -17,8 +17,8 @@ const CustomCod = () => {
               <Link className="card1" to={`/buyNow/${product.id}`}>
                 <p>{product.title}</p>
 
-                <div class="go-corner">
-                  <div class=" text-white">
+                <div className="go-corner">
+                  <div className=" text-white">
                     <MdOutlineKeyboardDoubleArrowRight />
                   </div>
                 </div>

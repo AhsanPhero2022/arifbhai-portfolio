@@ -6,11 +6,11 @@ import AboutUs from "../components/Pages/AboutUs";
 import AllServices from "../components/Pages/AllServices";
 import ContactUs from "../components/Pages/ContactUs";
 import BuyNow from "../components/Pages/BuyNow";
-import ServiceCategory from "../components/Pages/ServiceCategory";
 import Register from "../components/Layout/Register";
 import Login from "../components/Layout/Login";
 import UserProfilePage from "../components/Layout/UserProfilePage";
 import PrivateRoute from "../components/Layout/PrivateRoute";
+import MyService from "../components/Pages/MyService";
 
 export const router = createBrowserRouter([
   {
@@ -23,14 +23,8 @@ export const router = createBrowserRouter([
       { path: "/aboutUs", element: <AboutUs /> },
       { path: "/allServices", element: <AllServices /> },
       { path: "/contactUs", element: <ContactUs /> },
-      {
-        path: "/serviceCategory",
-        element: (
-          <PrivateRoute>
-            <ServiceCategory />
-          </PrivateRoute>
-        ),
-      },
+      { path: "/myservice", element: <MyService /> },
+
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
       { path: "/profile", element: <UserProfilePage /> },
