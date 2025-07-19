@@ -7,7 +7,7 @@ const CustomCod = () => {
   const products = data.products;
   return (
     <div className="mx-4">
-      <h1 className="my-16 text-center text-[40px] font-semibold">
+      <h1 className="my-16 text-center text-[#00838d] text-[40px] font-semibold">
         Custom Code
       </h1>
       <div>

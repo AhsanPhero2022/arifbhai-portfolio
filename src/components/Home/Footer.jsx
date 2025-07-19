@@ -15,7 +15,7 @@ const Footer = () => {
 
         {/* 2. Company Links */}
         <div>
-          <h2 className="text-lg font-semibold mb-4 text-cyan-500">Company</h2>
+          <h2 className="text-lg font-semibold mb-4 text-[#00838d]">Company</h2>
           <ul className="space-y-2 text-sm text-white">
             <li>
               <Link to="/">Home</Link>
@@ -37,7 +37,7 @@ const Footer = () => {
 
         {/* 3. Policy Links */}
         <div>
-          <h2 className="text-lg font-semibold mb-4 text-cyan-500">Legal</h2>
+          <h2 className="text-lg font-semibold mb-4 text-[#00838d]">Legal</h2>
           <ul className="space-y-2 text-sm text-white">
             <li>
               <Link to="/privacy-policy">Privacy Policy</Link>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         {/* 4. Social Media */}
         <div>
-          <h2 className="text-lg font-semibold mb-4 text-cyan-500">
+          <h2 className="text-lg font-semibold mb-4 text-[#00838d]">
             Follow Us
           </h2>
           <div className="flex space-x-4 text-xl">

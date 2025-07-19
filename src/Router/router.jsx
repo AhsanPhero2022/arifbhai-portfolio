@@ -11,6 +11,8 @@ import Login from "../components/Layout/Login";
 import UserProfilePage from "../components/Layout/UserProfilePage";
 import PrivateRoute from "../components/Layout/PrivateRoute";
 import MyService from "../components/Pages/MyService";
+import WebDevelopment from "../components/Pages/ServiceCategories/WebDevelopment";
+import GraphicsDesign from "../components/Pages/ServiceCategories/GraphicsDesign";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +26,8 @@ export const router = createBrowserRouter([
       { path: "/allServices", element: <AllServices /> },
       { path: "/contactUs", element: <ContactUs /> },
       { path: "/myservice", element: <MyService /> },
+      { path: "/webdevelopment", element: <WebDevelopment /> },
+      { path: "/graphicsDesign", element: <GraphicsDesign /> },
 
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
@@ -40,6 +44,11 @@ export const router = createBrowserRouter([
 
           const product = data.products.find((item) => item.id === params.id);
           if (product) return { ...product, type: "product" };
+
+          const category1 = data.webDevelopment.find(
+            (item) => item.id === params.id
+          );
+          if (category1) return { ...category1, type: "category1" };
 
           throw new Response("Data Not Found", { status: 404 });
         },

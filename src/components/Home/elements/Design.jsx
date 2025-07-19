@@ -18,7 +18,7 @@ const Design = () => {
             <p>Make your old shopify theme to upgrade the new version</p>
             <div className="card-actions justify-end">
               <Link to={`/buyNow/${service.id}`}>
-                <button className="btn text-white border border-orange-400 bg-[#00838d] hover:bg-orange-400">
+                <button className=" transition-colors duration-500 btn text-white border border-[	#e5e7eb] bg-[#00838d] hover:bg-cyan-500">
                   Buy Now
                 </button>
               </Link>

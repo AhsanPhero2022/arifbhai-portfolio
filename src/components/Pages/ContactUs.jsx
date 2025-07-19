@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { BiSolidMessageRoundedDetail } from "react-icons/bi";
 
 const ContactUs = () => {
   const {
@@ -109,9 +110,12 @@ const ContactUs = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-gradient-to-r from-cyan-500 to-orange-500 text-black text-xl px-6 py-3 rounded shadow hover:opacity-90 transition-all w-full"
+              className=" bg-white text-black hover:text-white text-xl px-6 py-3 rounded shadow hover:bg-gray-900  transition-all w-full duration-600"
             >
-              Send Message 📩
+              <div className="flex gap-3 justify-center items-center font-semibold">
+                <h1>Send Message</h1>
+                <BiSolidMessageRoundedDetail />
+              </div>
             </button>
           </form>
         </div>

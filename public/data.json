@@ -68,5 +68,29 @@
       "description": "Turn your Shopify homepage or section banners into fully clickable, high-converting links. With this service, your image banners will not only catch attention visually but also guide visitors directly to specific collections, products, or pages — boosting engagement and sales.",
       "image": "https://i.ytimg.com/vi/H1LBypEH8-M/maxresdefault.jpg"
     }
+  ],
+
+  "webDevelopment": [
+    {
+      "id": "category1",
+      "category": "Web Development",
+      "title": "Landing Page Design & Development",
+      "description": "Responsive and high-converting landing page using HTML, Tailwind, or React. Optimized for speed and SEO.",
+      "image": "https://s3-alpha.figma.com/hub/file/2224354844914769031/b64a41ed-ad02-4486-a2eb-6bc5ea0312de-cover.png"
+    },
+    {
+      "id": "category2",
+      "category": "Web Development",
+      "title": "Figma to HTML/React Conversion",
+      "description": "Pixel-perfect conversion of Figma designs into clean, maintainable HTML or React components.",
+      "image": "https://www.animaapp.com/blog/wp-content/uploads/2024/04/Figma-to-HTML-full-projects.jpg"
+    },
+    {
+      "id": "category3",
+      "category": "Web Development",
+      "title": "Email Template Design",
+      "description": "Custom-designed responsive email templates compatible with all major email clients.",
+      "image": "https://colorlib.com/wp/wp-content/uploads/sites/2/dyspatch-email-templates.jpg"
+    }
   ]
 }

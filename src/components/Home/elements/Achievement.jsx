@@ -5,15 +5,15 @@ const Achievement = () => {
     <div>
       <div className="text-center flex justify-evenly py-4 bg-black ">
         <div>
-          <h1 className="text-2xl font-bold text-white">4+</h1>
+          <h1 className="text-2xl font-bold text-white/90">4+</h1>
           <p className="font-bold text-[#00838d]">Years of Experience</p>
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-white">250+</h1>
+          <h1 className="text-2xl font-bold text-white/90">250+</h1>
           <p className="font-bold text-[#00838d]">5 Star Review</p>
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-white">450+</h1>
+          <h1 className="text-2xl font-bold text-white/90">450+</h1>
           <p className="font-bold text-[#00838d]">Completed Projects</p>
         </div>
         <div>

@@ -29,7 +29,9 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="text-xl font-bold text-[#00838d]">LOGO</div>
+            <div className="text-xl font-bold text-[#00838d]">
+              <Link to="/">DREAM TECH ZONE</Link>
+            </div>
 
             {/* Desktop Nav */}
             <ul className="hidden lg:flex items-center gap-6 font-semibold uppercase text-sm">
@@ -57,14 +59,24 @@ const Navbar = () => {
 
                 {dropdownOpen && (
                   <ul
-                    className="absolute top-8 mt-2 left-0 bg-white shadow rounded z-50 text-sm"
+                    className="absolute w-80 top-8 mt-2 left-0 bg-base-300 shadow-md border-amber-50 rounded z-50 text-sm"
                     onClick={closeDropdown}
                   >
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer flex items-center gap-2">
-                      <FaCode /> Web Development
+                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
+                      <Link
+                        className=" flex items-center gap-2"
+                        to="/webdevelopment"
+                      >
+                        <FaCode /> Web Development
+                      </Link>
                     </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer flex items-center gap-2">
-                      <FaPaintBrush /> Graphic Design
+                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer  ">
+                      <Link
+                        to="/graphicsDesign"
+                        className="flex items-center gap-2"
+                      >
+                        <FaPaintBrush /> Graphic Design
+                      </Link>
                     </li>
                     <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer flex items-center gap-2">
                       <FaBullhorn /> Marketing
@@ -154,20 +166,38 @@ const Navbar = () => {
               <div>
                 <span
                   onClick={toggleDropdown}
-                  className="block px-3 py-2 rounded hover:bg-cyan-200 uppercase font-semibold text-sm cursor-pointer"
+                  className="px-3 py-2 text-sm font-semibold hover:text-cyan-500 rounded cursor-pointer flex items-center gap-1"
                 >
                   SERVICE CATEGORY
+                  <FaAngleDown
+                    className={`transition-transform duration-300 ${
+                      dropdownOpen ? "rotate-180" : "rotate-0"
+                    }`}
+                  />
                 </span>
                 {dropdownOpen && (
-                  <ul className="ml-4 mt-1 bg-white shadow rounded text-sm">
+                  <ul
+                    className="w-80 top-8 mt-2 left-0 bg-base-300 shadow-md border-amber-50 rounded z-50 text-sm"
+                    onClick={closeDropdown}
+                  >
                     <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
-                      Web Development
+                      <Link
+                        className=" flex items-center gap-2"
+                        to="/webdevelopment"
+                      >
+                        <FaCode /> Web Development
+                      </Link>
                     </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
-                      Graphic Design
+                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer  ">
+                      <Link
+                        to="/graphicsDesign"
+                        className="flex items-center gap-2"
+                      >
+                        <FaPaintBrush /> Graphic Design
+                      </Link>
                     </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
-                      Marketing
+                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer flex items-center gap-2">
+                      <FaBullhorn /> Marketing
                     </li>
                   </ul>
                 )}

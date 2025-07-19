@@ -1,3 +1,4 @@
+import WebDevelopment from "../Pages/ServiceCategories/WebDevelopment";
 import Achievement from "./elements/Achievement";
 import Banner from "./elements/Banner";
 import Complete from "./elements/Complete";
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner />
       <Achievement />
       <Design />
+      <WebDevelopment />
       <CustomCod />
       <Complete />
       <WebsiteDesign />

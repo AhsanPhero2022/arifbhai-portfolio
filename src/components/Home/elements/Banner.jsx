@@ -25,7 +25,7 @@ const Banner = () => {
           </p>
           <div>
             <Link to="/allServices">
-              <button className="border border-blue-400 hover:bg-orange-500 text-white px-4 py-2 flex justify-center items-center rounded-[8px]">
+              <button className="border border-[#00838d] hover:bg-[#00838d] text-white px-4 py-2 flex justify-center items-center rounded-[8px]">
                 <span>
                   <img src={search} alt="" />
                 </span>

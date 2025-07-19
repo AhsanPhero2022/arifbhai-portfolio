@@ -245,14 +245,14 @@ const Faq = () => {
             <DisclosurePanel className="mt-2 ">
               <p>
                 You can reach us through the following channels: <br /> 📧
-                Email: nafijhossain10@gmail.com <br /> 📞 Phone/WhatsApp:
+                Email: dreamtechzone5@gmail.com <br /> 📞 Phone/WhatsApp:
                 +8801868810598
               </p>
             </DisclosurePanel>
           </Disclosure>
         </div>
       </div>
-      <h1 className="text-3xl text-orange-500 font-semibold text-center my-12">
+      <h1 className="text-3xl text-[#00838d] font-semibold text-center my-12">
         STILL HAVE QUESTIONS? GET IN TOUCH NOW
       </h1>
       <ContactUs />
