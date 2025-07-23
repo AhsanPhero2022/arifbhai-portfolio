@@ -9,10 +9,11 @@ import BuyNow from "../components/Pages/BuyNow";
 import Register from "../components/Layout/Register";
 import Login from "../components/Layout/Login";
 import UserProfilePage from "../components/Layout/UserProfilePage";
-import PrivateRoute from "../components/Layout/PrivateRoute";
 import MyService from "../components/Pages/MyService";
 import WebDevelopment from "../components/Pages/ServiceCategories/WebDevelopment";
 import GraphicsDesign from "../components/Pages/ServiceCategories/GraphicsDesign";
+import CustomCod from "../components/Home/elements/CustomCod";
+import PrivateRoute from "../components/Layout/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -25,9 +26,17 @@ export const router = createBrowserRouter([
       { path: "/aboutUs", element: <AboutUs /> },
       { path: "/allServices", element: <AllServices /> },
       { path: "/contactUs", element: <ContactUs /> },
-      { path: "/myservice", element: <MyService /> },
+      {
+        path: "/myservice",
+        element: (
+          <PrivateRoute>
+            <MyService />
+          </PrivateRoute>
+        ),
+      },
       { path: "/webdevelopment", element: <WebDevelopment /> },
       { path: "/graphicsDesign", element: <GraphicsDesign /> },
+      { path: "/customCode", element: <CustomCod /> },
 
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },

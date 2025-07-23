@@ -13,8 +13,8 @@ const Home = () => {
       <Banner />
       <Achievement />
       <Design />
-      <WebDevelopment />
       <CustomCod />
+      <WebDevelopment />
       <Complete />
       <WebsiteDesign />
       <Modern />

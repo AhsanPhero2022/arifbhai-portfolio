@@ -24,7 +24,7 @@
       "id": "products1",
       "title": "ACCORDION FOOTER FOR SHOPIFY FREE THEME",
       "description": "Make your Shopify store’s footer clean, organized, and user-friendly with an accordion-style footer menu. This service transforms bulky footer sections into collapsible panels that expand and collapse smoothly, providing a neat way to display links, policies, contact info, and more.",
-      "image": "https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1718365828/catalog/1801582308313344778/ttyzjdcdmeyd84rkq5vh.jpg"
+      "image": "../src/assets/services-img/image3.jpeg"
     },
     {
       "id": "products2",
@@ -42,13 +42,13 @@
       "id": "products4",
       "title": "AUTO PLAY VIDEO ON SHOPIFY HOMEPAGE",
       "description": "Capture your visitors attention instantly with a seamlessly embedded auto-play video on your Shopify homepage.",
-      "image": "https://i.ytimg.com/vi/rLeAx-u2nzU/maxresdefault.jpg"
+      "image": "../src/assets/services-img/image1.jpeg"
     },
     {
       "id": "products5",
       "title": "COLLECTION TABS IN SHOPIFY FREE THEME",
       "description": "Organize and showcase multiple product collections in a sleek, tabbed layout—right on your homepage or landing section. This service adds interactive collection tabs that allow customers to switch between product groups (e.g., New Arrivals, Best Sellers, Sale) without reloading the page.",
-      "image": "https://cdn.shopify.com/app-store/listing_images/7325a9eeed63a29b914d5ca4d095bf3a/desktop_screenshot/CMGh4dr4rIsDEAE=.png?height=720&width=1280"
+      "image": "../src/assets/services-img/image2.jpeg"
     },
     {
       "id": "products6",
@@ -90,7 +90,7 @@
       "category": "Web Development",
       "title": "Email Template Design",
       "description": "Custom-designed responsive email templates compatible with all major email clients.",
-      "image": "https://colorlib.com/wp/wp-content/uploads/sites/2/dyspatch-email-templates.jpg"
+      "image": "https://cdn.prod.website-files.com/64942e7300c2898fa7449d1c/64d5ed61aa4eb8c4aa261d2f_Templates.webp"
     }
   ]
 }

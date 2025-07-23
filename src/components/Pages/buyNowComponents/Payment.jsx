@@ -1,29 +1,33 @@
+import payment1 from "../../../assets/payment6 (1).jpeg";
+import payment2 from "../../../assets/payment6 (2).jpeg";
+import payment3 from "../../../assets/payment6 (3).jpeg";
+import payment4 from "../../../assets/payment6 (4).jpeg";
+import payment5 from "../../../assets/payment6 (5).jpeg";
+import payment6 from "../../../assets/payment6 (6).jpeg";
+
 const Payment = () => {
   return (
     <div className="flex justify-center flex-wrap items-center gap-4">
       <img
-        className="w-10 sm:w-12 md:w-14 lg:w-16"
-        src="https://www.softwareworld.co/assets/software/logo/payoneer.jpg"
+        className="w-16 sm:w-12 md:w-14 lg:w-16"
+        src={payment1}
         alt="Payoneer"
       />
       <img
-        className="w-10 sm:w-12 md:w-14 lg:w-16"
-        src="https://cdn.remitly.com/images/v1/img/remtily_logo_vertical_midnight_b.6eT0nA18TSlQIsjllF72RN.png"
+        className="w-16 sm:w-12 md:w-14 lg:w-16"
+        src={payment2}
         alt="remitly"
       />
       <img
-        className="w-10 sm:w-12 md:w-14 lg:w-16"
-        src="https://brandlogo.org/wp-content/uploads/2025/05/Binance-Logo-Vertical-2017.png.webp"
+        className="w-16 sm:w-12 md:w-14 lg:w-16"
+        src={payment3}
         alt="Payoneer"
       />
+      <img className="w-16 sm:w-12 md:w-14 lg:w-16" src={payment4} alt="xoom" />
+      <img className="w-16 sm:w-12 md:w-14 lg:w-16" src={payment5} alt="wise" />
       <img
-        className="w-10 sm:w-12 md:w-14 lg:w-16"
-        src="https://banner2.cleanpng.com/lnd/20250116/co/27d09a29b3056c595b6e2d995a15b5.webp"
-        alt="Payoneer"
-      />
-      <img
-        className="w-10 sm:w-12 md:w-14 lg:w-16"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7NqaqnIv0cz2GHV5TaJnBwpl-Urmpoyuqcg&s"
+        className="w-16 sm:w-12 md:w-14 lg:w-16"
+        src={payment6}
         alt="Payoneer"
       />
     </div>

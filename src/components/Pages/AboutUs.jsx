@@ -1,3 +1,5 @@
+import TeamSection from "./TeamSection";
+
 const AboutUs = () => {
   return (
     <div>
@@ -46,6 +48,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+      <TeamSection />
     </div>
   );
 };

@@ -38,7 +38,7 @@ const ContactUs = () => {
     <div>
       <div className="mt-8 max-w-3xl mx-auto text-center mb-10">
         <h1 className="text-4xl font-bold">Let’s Bring Your Vision to Life</h1>
-        <p className="text-xl font-semibold mt-3">
+        <p className="text-xl font-semibold mt-3  text-[#00838d]">
           Reach out and let’s turn your ideas into something impactful. Whether
           it’s a big project or a small task. I’m ready to help you get started.
         </p>

@@ -5,6 +5,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { FaCode, FaPaintBrush, FaBullhorn } from "react-icons/fa";
 import { useUser } from "@clerk/clerk-react";
 import Welcome from "./welcome";
+import { FaLaptopCode } from "react-icons/fa6";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -65,6 +66,14 @@ const Navbar = () => {
                     <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
                       <Link
                         className=" flex items-center gap-2"
+                        to="/customCode"
+                      >
+                        <FaLaptopCode /> Custom Code
+                      </Link>
+                    </li>
+                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
+                      <Link
+                        className=" flex items-center gap-2"
                         to="/webdevelopment"
                       >
                         <FaCode /> Web Development
@@ -77,9 +86,6 @@ const Navbar = () => {
                       >
                         <FaPaintBrush /> Graphic Design
                       </Link>
-                    </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer flex items-center gap-2">
-                      <FaBullhorn /> Marketing
                     </li>
                   </ul>
                 )}
@@ -183,9 +189,17 @@ const Navbar = () => {
                     <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
                       <Link
                         className=" flex items-center gap-2"
+                        to="/customCode"
+                      >
+                        <FaCode /> Custom Code
+                      </Link>
+                    </li>
+                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
+                      <Link
+                        className=" flex items-center gap-2"
                         to="/webdevelopment"
                       >
-                        <FaCode /> Web Development
+                        <FaLaptopCode /> Web Development
                       </Link>
                     </li>
                     <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer  ">
@@ -195,9 +209,6 @@ const Navbar = () => {
                       >
                         <FaPaintBrush /> Graphic Design
                       </Link>
-                    </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer flex items-center gap-2">
-                      <FaBullhorn /> Marketing
                     </li>
                   </ul>
                 )}
