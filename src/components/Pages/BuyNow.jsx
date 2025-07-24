@@ -17,7 +17,6 @@ import Payment from "./buyNowComponents/Payment";
 
 const BuyNow = () => {
   const service = useLoaderData();
-  console.log(service);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  ">

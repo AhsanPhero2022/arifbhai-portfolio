@@ -21,11 +21,11 @@ const features = [
 
 const Modern = () => {
   return (
-    <div className="bg-white py-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div className="bg-white py-10 px-4">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {features.map((feature, index) => (
           <div key={index} className="flex flex-col items-center space-y-3">
-            <div className="text-black">{feature.icon}</div>
+            <div className="text-black text-4xl">{feature.icon}</div>
             <p className="font-semibold tracking-wide text-gray-800">
               {feature.title}
             </p>

@@ -9,19 +9,20 @@ const CustomCod = () => {
       <h1 className="my-16 text-center text-[#00838d] text-[40px] font-semibold">
         Custom Code Service
       </h1>
-      <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center">
           {products.map((product) => (
-            <div className="card" key={product.id}>
-              <Link className="card1" to={`/buyNow/${product.id}`}>
-                <p>{product.title}</p>
-
-                <div className="go-corner">
-                  <div className=" text-white">
-                    <MdOutlineKeyboardDoubleArrowRight />
+            <div className="w-full max-w-sm" key={product.id}>
+              <div className="card">
+                <Link className="card1" to={`/buyNow/${product.id}`}>
+                  <p>{product.title}</p>
+                  <div className="go-corner">
+                    <div className="text-white">
+                      <MdOutlineKeyboardDoubleArrowRight />
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           ))}
         </div>

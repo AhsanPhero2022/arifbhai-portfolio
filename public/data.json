@@ -24,7 +24,7 @@
       "id": "products1",
       "title": "ACCORDION FOOTER FOR SHOPIFY FREE THEME",
       "description": "Make your Shopify store’s footer clean, organized, and user-friendly with an accordion-style footer menu. This service transforms bulky footer sections into collapsible panels that expand and collapse smoothly, providing a neat way to display links, policies, contact info, and more.",
-      "image": "../src/assets/services-img/image3.jpeg"
+      "image": "/assets/services-img/image1.jpeg"
     },
     {
       "id": "products2",
@@ -42,13 +42,13 @@
       "id": "products4",
       "title": "AUTO PLAY VIDEO ON SHOPIFY HOMEPAGE",
       "description": "Capture your visitors attention instantly with a seamlessly embedded auto-play video on your Shopify homepage.",
-      "image": "../src/assets/services-img/image1.jpeg"
+      "image": "/assets/services-img/image3.jpeg"
     },
     {
       "id": "products5",
       "title": "COLLECTION TABS IN SHOPIFY FREE THEME",
       "description": "Organize and showcase multiple product collections in a sleek, tabbed layout—right on your homepage or landing section. This service adds interactive collection tabs that allow customers to switch between product groups (e.g., New Arrivals, Best Sellers, Sale) without reloading the page.",
-      "image": "../src/assets/services-img/image2.jpeg"
+      "image": "/assets/services-img/image2.jpeg"
     },
     {
       "id": "products6",

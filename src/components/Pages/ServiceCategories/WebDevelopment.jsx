@@ -9,7 +9,7 @@ const WebDevelopment = () => {
       <h1 className="text-3xl font-semibold my-12 mx-8 text-center text-[#00838d]">
         Web Development Services
       </h1>
-      <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 my-4">
+      <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3 my-4">
         {webDevelopment.map((service) => (
           <div
             key={service.id}
