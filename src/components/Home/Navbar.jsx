@@ -1,16 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { FaUserCircle } from "react-icons/fa";
-import { FaAngleDown } from "react-icons/fa";
-import { FaCode, FaPaintBrush, FaBullhorn } from "react-icons/fa";
+import {
+  FaUserCircle,
+  FaAngleDown,
+  FaCode,
+  FaPaintBrush,
+  FaBullhorn,
+} from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa6";
 import { useUser } from "@clerk/clerk-react";
 import Welcome from "./welcome";
-import { FaLaptopCode } from "react-icons/fa6";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { user } = useUser();
+
+  const dropdownRef = useRef(null);
 
   const navItems = [
     { name: "HOME", path: "/" },
@@ -22,6 +28,18 @@ const Navbar = () => {
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const closeDropdown = () => setDropdownOpen(false);
+  const closeMenu = () => setMenuOpen(false);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <>
@@ -38,14 +56,14 @@ const Navbar = () => {
             <ul className="hidden lg:flex items-center gap-6 font-semibold uppercase text-sm">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <Link to={item.path} className="hover:text-cyan-500  rounded">
+                  <Link to={item.path} className="hover:text-cyan-500 rounded">
                     {item.name}
                   </Link>
                 </li>
               ))}
 
               {/* Dropdown */}
-              <li className="relative">
+              <li className="relative" ref={dropdownRef}>
                 <span
                   onClick={toggleDropdown}
                   className="hover:text-cyan-500 rounded cursor-pointer flex items-center gap-1"
@@ -59,30 +77,36 @@ const Navbar = () => {
                 </span>
 
                 {dropdownOpen && (
-                  <ul
-                    className="absolute w-80 top-8 mt-2 left-0 bg-base-300 shadow-md border-amber-50 rounded z-50 text-sm"
-                    onClick={closeDropdown}
-                  >
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
+                  <ul className="absolute w-80 top-8 mt-2 left-0 bg-base-300 shadow-md rounded z-50 text-sm">
+                    <li
+                      onClick={closeDropdown}
+                      className="hover:bg-cyan-100 px-4 py-2 cursor-pointer"
+                    >
                       <Link
-                        className=" flex items-center gap-2"
+                        className="flex items-center gap-2"
                         to="/customCode"
                       >
                         <FaLaptopCode /> Custom Code
                       </Link>
                     </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
+                    <li
+                      onClick={closeDropdown}
+                      className="hover:bg-cyan-100 px-4 py-2 cursor-pointer"
+                    >
                       <Link
-                        className=" flex items-center gap-2"
+                        className="flex items-center gap-2"
                         to="/webdevelopment"
                       >
                         <FaCode /> Web Development
                       </Link>
                     </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer  ">
+                    <li
+                      onClick={closeDropdown}
+                      className="hover:bg-cyan-100 px-4 py-2 cursor-pointer"
+                    >
                       <Link
-                        to="/graphicsDesign"
                         className="flex items-center gap-2"
+                        to="/graphicsDesign"
                       >
                         <FaPaintBrush /> Graphic Design
                       </Link>
@@ -94,17 +118,15 @@ const Navbar = () => {
 
             {/* Right Side */}
             <div className="flex items-center gap-4">
-              {/* 1 */}
               {user ? (
                 <Link className="tooltip" data-tip="Edit Profile" to="/profile">
                   <img src={user.imageUrl} className="rounded-full w-8 h-8" />
                 </Link>
               ) : (
-                <Link className=" tooltip" data-tip="Sign Up" to="/register">
+                <Link className="tooltip" data-tip="Sign Up" to="/register">
                   <FaUserCircle className="w-8 h-8 text-[#00838d]" />
                 </Link>
               )}
-              {/* 2 */}
 
               <Link to="/contactUs">
                 <button className="hidden lg:inline-block bg-[#00838d] text-white px-4 py-2 rounded hover:bg-cyan-500 transition">
@@ -114,12 +136,12 @@ const Navbar = () => {
 
               {/* Mobile Hamburger */}
               <div
-                className="lg:hidden cursor-pointer transition duration-300 ease-in-out"
+                className="lg:hidden cursor-pointer transition duration-300"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {menuOpen ? (
                   <svg
-                    className="w-6 h-6 transform transition-transform duration-300 rotate-180"
+                    className="w-6 h-6 rotate-180"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth={2}
@@ -133,7 +155,7 @@ const Navbar = () => {
                   </svg>
                 ) : (
                   <svg
-                    className="w-6 h-6 transform transition-transform duration-300 rotate-0"
+                    className="w-6 h-6"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth={2}
@@ -152,60 +174,69 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {menuOpen && (
-            <div
-              className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden mt-2 space-y-2 pb-4 ${
-                menuOpen
-                  ? "max-h-screen opacity-100 scale-100"
-                  : "max-h-0 opacity-0 scale-95 pointer-events-none"
-              }`}
-            >
+            <div className="lg:hidden transition-all duration-300 space-y-2 pb-4 mt-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
+                  onClick={closeMenu}
                   className="block px-3 py-2 rounded hover:bg-cyan-200 uppercase font-semibold text-sm"
-                  onClick={() => setMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div>
+              <div ref={dropdownRef}>
                 <span
                   onClick={toggleDropdown}
-                  className="px-3 py-2 text-sm font-semibold hover:text-cyan-500 rounded cursor-pointer flex items-center gap-1"
+                  className="px-3 py-2 text-sm font-semibold hover:text-cyan-500 flex items-center gap-1"
                 >
                   SERVICE CATEGORY
                   <FaAngleDown
-                    className={`transition-transform duration-300 ${
-                      dropdownOpen ? "rotate-180" : "rotate-0"
+                    className={`transition-transform ${
+                      dropdownOpen ? "rotate-180" : ""
                     }`}
                   />
                 </span>
                 {dropdownOpen && (
-                  <ul
-                    className="w-80 top-8 mt-2 left-0 bg-base-300 shadow-md border-amber-50 rounded z-50 text-sm"
-                    onClick={closeDropdown}
-                  >
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
+                  <ul className="bg-base-300 shadow-md rounded z-50 text-sm">
+                    <li
+                      onClick={() => {
+                        closeDropdown();
+                        closeMenu();
+                      }}
+                      className="hover:bg-cyan-100 px-4 py-2 cursor-pointer"
+                    >
                       <Link
-                        className=" flex items-center gap-2"
+                        className="flex items-center gap-2"
                         to="/customCode"
                       >
                         <FaCode /> Custom Code
                       </Link>
                     </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer">
+                    <li
+                      onClick={() => {
+                        closeDropdown();
+                        closeMenu();
+                      }}
+                      className="hover:bg-cyan-100 px-4 py-2 cursor-pointer"
+                    >
                       <Link
-                        className=" flex items-center gap-2"
+                        className="flex items-center gap-2"
                         to="/webdevelopment"
                       >
                         <FaLaptopCode /> Web Development
                       </Link>
                     </li>
-                    <li className="hover:bg-cyan-100 px-4 py-2 cursor-pointer  ">
+                    <li
+                      onClick={() => {
+                        closeDropdown();
+                        closeMenu();
+                      }}
+                      className="hover:bg-cyan-100 px-4 py-2 cursor-pointer"
+                    >
                       <Link
-                        to="/graphicsDesign"
                         className="flex items-center gap-2"
+                        to="/graphicsDesign"
                       >
                         <FaPaintBrush /> Graphic Design
                       </Link>
@@ -216,7 +247,7 @@ const Navbar = () => {
               <Link
                 to="/contactUs"
                 className="block bg-[#00838d] text-white px-4 py-2 rounded hover:bg-cyan-500 transition"
-                onClickCapture={() => setMenuOpen(false)}
+                onClick={closeMenu}
               >
                 Contact Us
               </Link>

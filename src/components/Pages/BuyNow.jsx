@@ -14,9 +14,14 @@ import {
 
 import WpBtn from "./buyNowComponents/WpBtn";
 import Payment from "./buyNowComponents/Payment";
+import { useEffect } from "react";
 
 const BuyNow = () => {
   const service = useLoaderData();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // smooth optional
+  }, []);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  ">

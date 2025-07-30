@@ -37,11 +37,12 @@ body {
 .card1 {
   display: block;
   position: relative;
+  width: 100%;
   max-width: 262px;
   background-color: #f2f8f9;
   border-radius: 4px;
   padding: 28px 22px;
-  margin: 8px;
+  margin: 8px auto; /* center horizontally */
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
