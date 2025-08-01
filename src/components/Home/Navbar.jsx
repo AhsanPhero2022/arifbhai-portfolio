@@ -1,11 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   FaUserCircle,
   FaAngleDown,
   FaCode,
   FaPaintBrush,
-  FaBullhorn,
 } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa6";
 import { useUser } from "@clerk/clerk-react";
@@ -56,9 +55,18 @@ const Navbar = () => {
             <ul className="hidden lg:flex items-center gap-6 font-semibold uppercase text-sm">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <Link to={item.path} className="hover:text-cyan-500 rounded">
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `px-4 py-2 rounded-md transition-all duration-200 ${
+                        isActive
+                          ? "bg-blue-100 text-[#00838d] font-semibold shadow"
+                          : " hover:text-[#00838d]"
+                      }`
+                    }
+                  >
                     {item.name}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
 

@@ -15,6 +15,7 @@ import {
 import WpBtn from "./buyNowComponents/WpBtn";
 import Payment from "./buyNowComponents/Payment";
 import { useEffect } from "react";
+import WhatUWillGet from "./buyNowComponents/WhatUWillGet";
 
 const BuyNow = () => {
   const service = useLoaderData();
@@ -64,7 +65,13 @@ const BuyNow = () => {
                   specialize in store setup and design, making your Shopify
                   store visually captivating and professionally polished to
                   attract potential customers.
+                  <br />
+                  <br />
+                  Tell us your niche, and we'll take care of the rest, making
+                  sure your Shopify store is uniquely tailored to stand out and
+                  succeed.
                 </p>
+                <WhatUWillGet />
               </DisclosurePanel>
             </Disclosure>
           </div>
