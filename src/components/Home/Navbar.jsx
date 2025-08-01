@@ -184,14 +184,20 @@ const Navbar = () => {
           {menuOpen && (
             <div className="lg:hidden transition-all duration-300 space-y-2 pb-4 mt-2">
               {navItems.map((item) => (
-                <Link
+                <NavLink
                   key={item.name}
                   to={item.path}
                   onClick={closeMenu}
-                  className="block px-3 py-2 rounded hover:bg-cyan-200 uppercase font-semibold text-sm"
+                  className={({ isActive }) =>
+                    `block px-3 py-2 hover:bg-cyan-200 uppercase font-semibold text-sm rounded-md transition-all duration-200 ${
+                      isActive
+                        ? "bg-blue-100 text-[#00838d] font-semibold shadow"
+                        : " hover:text-[#00838d]"
+                    }`
+                  }
                 >
                   {item.name}
-                </Link>
+                </NavLink>
               ))}
               <div ref={dropdownRef}>
                 <span
